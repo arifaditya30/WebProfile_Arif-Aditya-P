@@ -256,3 +256,115 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.contact {
+  background: var(--red);
+  min-height: 100vh;
+}
+.contact h2 {
+  padding-top: 5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--smoke);
+  text-align: center;
+}
+
+.contact .contact-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  column-gap: 10rem;
+}
+
+.contact .contact-detail form {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--orange);
+  padding: 64px 32px;
+}
+
+.contact-detail form button {
+  border: none;
+}
+
+.contact-detail form button:hover {
+  cursor: pointer;
+}
+
+.contact-detail .form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  margin-top: 32px;
+  grid-template-areas:
+    "name subject"
+    "email phone"
+    "message message";
+}
+
+#input-name {
+  grid-area: name;
+}
+
+#input-subject {
+  grid-area: subject;
+}
+
+#input-email {
+  grid-area: email;
+}
+
+#input-phone {
+  grid-area: phone;
+}
+
+#input-message {
+  grid-area: message;
+}
+
+.form-group .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.form-group .input-group label {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--smoke);
+}
+
+.form-group .input-group input {
+  border: none;
+  outline: none;
+  background-color: #ec323f;
+  border-bottom: 1px solid var(--smoke);
+  font-size: 1.5rem;
+  color: var(--smoke);
+}
+
+.form-group .input-group input:focus {
+  border-bottom: 2px solid #ffc108;
+}
+
+.contact-detail form .button {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--smoke);
+  background-color: var(--orange);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact .location h3 {
+  color: var(--smoke);
+}
+
+::placeholder {
+  color: #fff;
+}
