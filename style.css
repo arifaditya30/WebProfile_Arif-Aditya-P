@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
+  background-color: var(--smoke);
   border-bottom: 1px solid var(--orange);
   position: fixed;
   top: 0;
@@ -83,4 +84,59 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 1.4rem 7%;
+}
+
+.hero .content {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20rem;
+}
+
+.content .hero-desc p:nth-child(1) {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.content .hero-desc h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.content .hero-desc p:nth-child(3) {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.content .hero-desc .cta {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--smoke);
+  background-color: var(--red);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero .content .hero-img {
+  flex: 1 0 30rem;
+}
+
+.content .hero-img img {
+  width: 75%;
 }
