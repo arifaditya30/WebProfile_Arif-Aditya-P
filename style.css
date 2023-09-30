@@ -1,0 +1,26 @@
+:root {
+  --orange: #ff9a30;
+  --red: #ec323f;
+  --smoke: #f9f4f4;
+  --black: #17171f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--smoke);
+  color: var(--black);
+}
