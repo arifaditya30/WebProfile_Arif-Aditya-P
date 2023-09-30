@@ -25,11 +25,18 @@ body {
   color: var(--black);
 }
 
+.navbar,
+.hero,
+.about,
+.portfolio,
+.contact {
+  padding: 1.4rem 7%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
   background-color: var(--smoke);
   border-bottom: 1px solid var(--orange);
   position: fixed;
@@ -133,10 +140,119 @@ body {
   transition: 0.3s;
 }
 
-.hero .content .hero-img {
+.content .hero-img {
   flex: 1 0 30rem;
 }
 
 .content .hero-img img {
   width: 75%;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+
+  min-height: 100vh;
+  background-color: var(--red);
+}
+
+.about .row {
+  display: flex;
+  gap: 2rem;
+}
+
+.about .row .about-img {
+  flex: 1 1 100rem;
+}
+.about .row .about-img img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.about .row .about-content {
+  flex: 1 1 90rem;
+  padding: 0 1rem;
+}
+.about .row .about-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--smoke);
+}
+
+.about .row .about-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  color: var(--smoke);
+  text-align: justify;
+  margin: 1rem;
+}
+.about .row .about-content h3 {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  color: var(--smoke);
+  font-style: italic;
+}
+
+.about .row .about-content .social-media a {
+  color: var(--smoke);
+  margin: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio h2 {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--red);
+  text-align: center;
+}
+
+.portfolio .artwork h3 {
+  font-size: 2rem;
+  color: var(--orange);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.portfolio .artwork h3::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--red);
+  /* padding-bottom: 0.5rem; */
+  margin-top: 0.5rem;
+  transform: scale(1);
+  transition: 0.2s linear;
+}
+
+.portfolio .artwork .artwork-illustration,
+.artwork-Design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.portfolio .artwork .artwork-illustration img,
+.artwork-Design img {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio .artwork .artwork-illustration img:hover,
+.artwork-Design img:hover {
+  transform: scale(1.02);
+  transition: 0.7s;
+}
+
+.portfolio .view {
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
 }
