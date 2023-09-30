@@ -365,6 +365,19 @@ body {
   color: var(--smoke);
 }
 
+.location iframe {
+  margin-top: 1rem;
+}
+
 ::placeholder {
   color: #fff;
+}
+
+.footer {
+  padding: 1.4rem 7%;
+}
+
+.footer p {
+  text-align: center;
+  color: var(--red);
 }
